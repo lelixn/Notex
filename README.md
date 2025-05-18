@@ -52,6 +52,5 @@ MIT — use it, remix it, nap with it.
 
 ---
 
-## 📸 Preview
 
-![Screenshot](./Screenshot%202025-05-16%20234237.png)
+
