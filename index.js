@@ -2,26 +2,10 @@ const notes = document.querySelector('.notes-text');
 const button = document.querySelector('.btn');
 const input = document.querySelector('.input');
 
-// function showNotes(){
-//     notes.innerHTML = localStorage.getItem('notes');
-// }
-// showNotes();
-
-
 function showNotes(){
-    const storedNotes = localStorage.getItem('notes');
-    if (!storedNotes || storedNotes.trim() === '') {
-        let inputBox = document.createElement('p');
-        let img = document.createElement('img');
-        inputBox.className = 'input';
-        inputBox.setAttribute('contenteditable', 'true');
-        img.src = 'trash.jpg';
-        notes.appendChild(inputBox).appendChild(img);
-        updateStorage();
-    } else {
-        notes.innerHTML = storedNotes;
-    }
+    notes.innerHTML = localStorage.getItem('notes');
 }
+showNotes();
 
 
 function updateStorage(){
